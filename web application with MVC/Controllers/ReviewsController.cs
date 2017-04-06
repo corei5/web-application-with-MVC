@@ -16,6 +16,7 @@ namespace web_application_with_MVC.Controllers
         private web_application_with_MVCMusicStoreContext db = new web_application_with_MVCMusicStoreContext();
 
         // GET: Reviews
+        //[Route("Reviews/All")]
         public ActionResult Index()
         {
             var reviews = db.Reviews.Include(r => r.Album);
@@ -23,6 +24,7 @@ namespace web_application_with_MVC.Controllers
         }
 
         // GET: Reviews/Details/5
+        [Route("Album/{id:int}")]
         public ActionResult Details(int? id)
         {
             if (id == null)

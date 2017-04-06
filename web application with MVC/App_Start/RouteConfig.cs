@@ -12,6 +12,7 @@ namespace web_application_with_MVC
         public static void RegisterRoutes(RouteCollection routes)
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
+            routes.MapMvcAttributeRoutes(); // add hear for make new url
 
             routes.MapRoute(
                 name: "Default",

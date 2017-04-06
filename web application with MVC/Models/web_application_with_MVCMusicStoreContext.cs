@@ -19,8 +19,10 @@ namespace web_application_with_MVC.Models
         {
         }
 
-        public System.Data.Entity.DbSet<web_application_with_MVC.Models.Album> Albums { get; set; }
+        public DbSet<Album> Albums { get; set; }
 
-        public System.Data.Entity.DbSet<MvcMusicStore.Models.Review> Reviews { get; set; }
+        public DbSet<MvcMusicStore.Models.Review> Reviews { get; set; }
+        public DbSet<MvcMusicStore.Models.Artist> Artists { get; set; }
+
     }
 }

@@ -10,4 +10,6 @@ namespace web_application_with_MVC.Models
         public Artist Artist { get; set; }
         public virtual List<Review> Review { get; set; }
     }
+
+
 }

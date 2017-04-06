@@ -14,7 +14,10 @@ namespace web_application_with_MVC.Controllers
     {
         private web_application_with_MVCMusicStoreContext db = new web_application_with_MVCMusicStoreContext();
 
+
         // GET: Albums
+        //[Authorize()]
+        //[Route("Albums/All")]
         public ActionResult Index()
         {
             return View(db.Albums.ToList());
@@ -35,7 +38,10 @@ namespace web_application_with_MVC.Controllers
             return View(album);
         }
 
+
         // GET: Albums/Create
+
+        // [Authorize()]
         public ActionResult Create()
         {
             return View();

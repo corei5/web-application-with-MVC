@@ -1,4 +1,5 @@
-﻿using web_application_with_MVC.Models;
+﻿using System.ComponentModel.DataAnnotations;
+using web_application_with_MVC.Models;
 
 namespace MvcMusicStore.Models
 {
@@ -11,6 +12,9 @@ namespace MvcMusicStore.Models
         public virtual Album Album { get; set; }
 
         public string Contents { get; set; }
+        [Required()]
+        [Display(Name ="Email-Address")]
+        [DataType(DataType.EmailAddress)]
 
         public string ReviewerEmail { get; set; }
     }

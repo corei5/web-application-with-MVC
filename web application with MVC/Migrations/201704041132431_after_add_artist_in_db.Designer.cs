@@ -7,13 +7,13 @@ namespace web_application_with_MVC.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class InitialCreate : IMigrationMetadata
+    public sealed partial class after_add_artist_in_db : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(InitialCreate));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(after_add_artist_in_db));
         
         string IMigrationMetadata.Id
         {
-            get { return "201704030754169_InitialCreate"; }
+            get { return "201704041132431_after_add_artist_in_db"; }
         }
         
         string IMigrationMetadata.Source
